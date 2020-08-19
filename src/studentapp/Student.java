@@ -14,12 +14,25 @@ public class Student {
     private int id;
 
     private String name;
+    
+    private String lastname;
 
-    public Student(int id, String name) {
+
+
+    public Student(int id, String name, String lastname) {
         this.id = id;
         this.name = name;
+        this.lastname = lastname;
+    }
+    
+    public String getLastname() {
+        return lastname;
     }
 
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+    
     public String getName() {
         return name;
     }
